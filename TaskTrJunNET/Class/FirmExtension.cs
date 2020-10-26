@@ -12,7 +12,8 @@ namespace TaskTrJunNET.Class
     {
         public static void IsEmloyed (this IFirm firm, IWorker worker)
         {
-            if (firm.Workers.Contains(worker as CommonWorker) || firm.Workers.Contains(worker as Manager) || firm.Workers.Contains(worker as TaskMaster))
+            //if (firm.Workers.Contains(worker as CommonWorker) || firm.Workers.Contains(worker as Manager) || firm.Workers.Contains(worker as TaskMaster))
+            if (firm.Workers.Contains(worker))
                 Console.WriteLine("Да, такой есть");
             else Console.WriteLine("такого нет");
         }
